@@ -1,0 +1,71 @@
+html,
+body {
+    height: 100%;}
+
+    body {
+    background-color: rgb(201, 222, 235);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.main-title {
+    color: #4e315f;}
+
+.list-wrapper {
+    background-color: rgb(220, 182, 255);
+    width: 90%;
+    max-width: 500px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2 )
+
+}
+.list {list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.list-item {display: flex;
+border-bottom: 1px solid #eee ;
+padding: 16px;
+}
+
+
+.list-item___imagens img{
+    width: 80px;
+    border-radius: 50px;
+}
+.list-item___content{
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.list-item___name {font-size: 24px;
+color: rgb(127, 11, 156);
+margin: 0;
+}
+
+.list-item___email{margin: 5px 0 0;
+color: rgb(100, 96, 91);}
+
+.list-item:hover{
+    background-color: #e8e8e8;
+
+}
+
+.list-tem___actions{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    opacity: 0.50;
+
+}
+.list-item:hover .list-tem___actions{
+    display: flex;
+}
