@@ -1,130 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(BG2.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, hsla(161, 26%, 57%, 0.7), #53778bb3), url('BG2.jpg') no-repeat center center/cover;
+    backdrop-filter: blur(5px);
 }
 
-.wrapper{
-    width: 420px;
-    background: transparent;
-    backdrop-filter: blur(35px);
-    box-shadow: 0 0 30px #608986;
+.wrapper {
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     color: #53778b;
-    border-radius: 20px;
-    padding: 30px 40px;
+    border-radius: 15px;
+    padding: 35px 45px;
     font-weight: 600;
-}
-
-.wrapper h1{
-    color: #53778b;
-    font-size: 36px;
     text-align: center;
 }
 
-.wrapper .input-box{
-    
+.wrapper h1 {
+    font-size: 34px;
+    margin-bottom: 25px;
+    color: #08344db3;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.input-box {
     position: relative;
     width: 100%;
-    height: 50px;
-    margin: 30px 0;
-
+    margin: 20px 0;
 }
 
-.input-box input{
+.input-box input {
     width: 100%;
-    height: 100%;
-    background: transparent ;
-    border: none;
-    outline: none ;
-    border: 2px solid #74ad9b;
-    border-radius: 40px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #08344db3;
+    border-radius: 30px;
+    padding: 0 15px;
     font-size: 16px;
     color: #ffffff;
-    padding: 20px 45px 20px 20px;
-    
+    transition: all 0.3s ease;
 }
 
-.input-box input::placeholder{
-    color: #53778b;
+.input-box input:focus {
+    border-color: #74ad9b;
+    background: rgba(255, 255, 255, 0.2);
 }
 
-.input-box i{
+.input-box input::placeholder {
+    color: #08344db3;
+}
+
+.input-box i {
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 20px ;
-    color: #fff;
+    font-size: 20px;
+    color: #ffffff;
 }
 
-.wrapper .remember-forget{
+.remember-forget {
     display: flex;
     justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
+    font-size: 14px;
+    color: #08344db3;
+    margin-bottom: 15px;
 }
 
-.remember-forget label input{
-    accent-color: #242323;
-    margin-right: 3px ;
-}
-
-.remember-forget a{
-    color: #53778b;
+.remember-forget a {
+    color: #186950;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.remember-forget a:hover{
-
+.remember-forget a:hover {
+    color: #ffffff;
     text-decoration: underline;
-
 }
 
-.wrapper .btn  {
+.btn {
     width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px ;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
-}
-
-.wrapper .btn:hover{
+    height: 50px;
     background: #74ad9b;
-    color: white;
-    border-color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.wrapper .register-link {
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px ;
+.btn:hover {
+    background: #53778b;
+    box-shadow: 0 5px 15px rgba(83, 119, 139, 0.4);
 }
 
-.register-link p a {
-    color:#53778b;
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #08344db3;
+}
+
+.register-link a {
+    color: #186950;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.register-link p a:hover{
+.register-link a:hover {
+    color: #ffffff;
     text-decoration: underline;
 }
